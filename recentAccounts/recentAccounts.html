@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-box">
+        <h2>10 Latest Created Accounts</h2>
+        <ul>
+            <template for:each={accounts} for:item="account">
+                <li key={account.Id}>{account.Name}</li>
+            </template>
+        </ul>
+    </div>
+</template>
